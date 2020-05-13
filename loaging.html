@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
-    <div class="box">
+    <!-- <div class="box">
         <div class="loading">
-            <!-- 登录 -->
+           
             <div class="loading-iphone">
                 <div class="iphone">
                     <input type="text" placeholder="请输入手机号">
@@ -29,54 +29,83 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <input type="text" id="phone">
+    <button class="sub">提交</button>
 <script src="layui-v2.5.6/layui/layui.all.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/phone.js"></script>
 <script>
-    layui.carousel.render({
+
+layui.use(['table','form','upload','laypage'], function(){
+    var table = layui.table;
+    var form =layui.form;
+    var layer = layui.layer;
+    var upload=layui.upload;
+    var page = layui.laypage; //分页
+  //不能用这样要用layui自带的jquery不然关闭以后还会显示出来
+    var $ =layui.jquery;
+
+    $('body').on("click",".sub",function(){
+        var phone=$("#phone").val()
+        $.ajax({
+        async: false,
+        type:'post',
+        url: "http://ouqiang.free.qydev.com/wechat/test",
+        date:{"phonbe":phone},
+        success: function (result) {
+         alert(result)
+        }
+    })
+    })
+
+})
+  
+  
+//     layui.carousel.render({
  
-        elem: '#test1'
-        ,width: '420px'
-        ,height: '220px'
-        ,interval: 3000
-      });
+//         elem: '#test1'
+//         ,width: '420px'
+//         ,height: '220px'
+//         ,interval: 3000
+//       });
    
     
-     //渲染
-     layui.rate.render({
-       elem: '#test3'  //绑定元素
-       ,theme: '#FFB800;'
-     });
+//      //渲染
+//      layui.rate.render({
+//        elem: '#test3'  //绑定元素
+//        ,theme: '#FFB800;'
+//      });
  
- layui.use('upload', function(){
-   var upload = layui.upload;
+//  layui.use('upload', function(){
+//    var upload = layui.upload;
     
-   var urls = 'http://q8rwxwn4o.bkt.clouddn.com/'
- upload.render({
+//    var urls = 'http://q8rwxwn4o.bkt.clouddn.com/'
+//  upload.render({
    
-     elem: '#test2'
+//      elem: '#test2'
  
-      ,method: 'post'
+//       ,method: 'post'
  
-      ,number:9
+//       ,number:9
  
-      ,accept: 'images'   //指定允许上传的文件类型 
+//       ,accept: 'images'   //指定允许上传的文件类型 
  
-      ,url: 'http://116.62.56.216:18888/img/upload' //改成您自己的上传接口 
+//       ,url: 'http://116.62.56.216:18888/img/upload' //改成您自己的上传接口 
  
-      ,multiple: true //是否允许多文件上传 
-     ,before: function(obj){
-       //预读本地文件示例，不支持ie8
-       obj.preview(function(index, file, result){
-       });
-     }
-     ,done: function(res){
-       //上传完毕
-       $('#demo2').append('<img src="'+ urls + res.data+'" class="layui-upload-img">') 
-     }
-   });
- });
+//       ,multiple: true //是否允许多文件上传 
+//      ,before: function(obj){
+//        //预读本地文件示例，不支持ie8
+//        obj.preview(function(index, file, result){
+//        });
+//      }
+//      ,done: function(res){
+//        //上传完毕
+//        $('#demo2').append('<img src="'+ urls + res.data+'" class="layui-upload-img">') 
+//      }
+//    });
+//  });
     </script>
 </body>
 </html>
