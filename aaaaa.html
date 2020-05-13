@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <div class="ct-layout">
+        <input type="text" style="border-radius: 50px;" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">  
+  
+        <div class="ct-content">
+            <div class="ct-left">
+                <ul class="nav-swiper">
+                    <li class="active"><a href="javascript:;">11111</a></li>
+                </ul>
+            </div>
+            <div class="ct-right">
+                <div class="ct-right-box">
+                    <!-- <ul class="listing">
+                        <li>
+                            <a href="javascript:">
+                                <div><img src="img/timg.jpg" alt=""></div>
+                                <div><p>图片</p><span>12000$</span></div>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div> 
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<!-- <script src="js/zepto.min.js"></script> -->
+<!-- <script src="js/search.js"></script> -->
+<script>
+    $('.nav-swiper li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var indexs = index
+            
+            $("#tribute-box li").eq(indexs).fadeIn(100).siblings().fadeOut(100);
+        })
+
+        
+$(function(){
+    var getQueryString = function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        if (!window.location.search) return false;
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]);
+        return '';
+      };
+
+      // 积分
+      $.ajax({
+        type: 'get',
+        url:'http://116.62.56.216:18888/goods',
+        dataType: "json",
+        data:{
+            id:'id'
+        },
+       
+        success: function (data) {
+            var str = '<ul class="listing">';
+            var data = data.data;
+            $.each(data, function(idx,val) {
+                str +='<li>'+'<a href="wares.html?bookId='+val.id+'">'+'<div>'+'<img src="' + api + val.image +'" alt="">'+'</div>'+'<div>'+'<p>'+val.name +'</p>'+'<span>'+ val.integral +'</span>'+'</div>'+'</a>'+'</li>';
+               });
+            $('.ct-right-box').html(str + '</ul>')    
+        },
+        error: function(){
+
+        }
+     
+    })
+
+    // 积分兑换
+    var api =' http://q8rwxwn4o.bkt.clouddn.com/';
+    var id = getQueryString('bookId');
+    $.ajax({
+        type:'get',
+        url:'http://116.62.56.216:18888/goods',
+        dataType:'json',
+        success:function(data,status){
+
+            var data = data.data;
+       
+         $.each(data, function(idx,val) {
+        
+          //根据id获取详情数据
+          if(id == val.id){
+           var  str2 =  '';
+           var img = ''
+           str2 += '<li>'+'<p>'+'<span>'+val.name+'</span>'+'<span>剩余:'+val.stock+'</span>'+'</p>'+'<p>'+'<span>需要积分</span>'+'<span>'+val.integral+'</span>'+'</p>'+'<p>兑换详情' +'<br>' + val.details+'</p>'+'</li>';
+           console.log('index:'+idx);
+           img += '<div carousel-item>'+'<div style="display:block">'+'<a href="javascript:" class="u4">'+'<img src="' + api + val.image +'" alt="">'+'</a>'+'</div>'+'</div>'
+          }
+          $('.exchange ul').html(str2);
+          $('#test1').html(img);
+         });
+        }
+        })
+
+
+        $.ajax({
+        type:'get',
+        url:'http://116.62.56.216:18888/goods-id',
+        dataType:'json',
+        success:function(data,status){
+            console.log(data)
+            // 
+            var bbb = ''
+            var data1 = data.data;
+         $.each(data1, function(idx,val) {
+            bbb+= ''
+         })
+        
+          //根据id获取详情数据
+        //   if(id == val.id){
+          
+          }
+      
+        //  });
+        // }
+        })
+
+
+
+
+})
+    </script>
+</body>
+</html>

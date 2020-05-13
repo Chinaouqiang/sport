@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+.ps {
+  position: absolute;
+}
+.dn {
+  display: none;
+}
+img {
+  height: auto;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[src=""] {
+  display: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  overflow-x: hidden;
+}
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.m_left10 {
+  margin-left: 10px;
+}
+.m_right10 {
+  margin-right: 10px;
+}
+.m_top10 {
+  margin-top: 10px;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.container .container-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container .container-inner .comment-arousel {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.container .container-inner .comment-arousel .layui-carousel {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.container .container-inner .comment-arousel .layui-carousel .u4 {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  width: 375px;
+  height: 150px;
+}
+.container .container-inner .comment-arousel .layui-carousel .u4 img {
+  display: block;
+  width: 375px;
+  height: 150px;
+}
+.container .container-inner .comment-arousel .layui-carousel .layui-carousel-ind {
+  top: -11px;
+}
+.container .container-inner .comment-arousel .layui-carousel .layui-carousel-ind ul {
+  background-color: rgba(0, 0, 0, 0);
+}
+.container .container-inner .comment-arousel .layui-carousel .layui-carousel-ind ul li {
+  width: 6px;
+  height: 6px;
+}
+.container .container-inner .comment-arousel .layui-carousel .layui-icon {
+  display: none;
+}
+.container .container-inner .lists {
+  width: 100%;
+  height: 100%;
+}
+.container .container-inner .lists .p_p {
+  border-bottom: 1px solid #ccc;
+}
+.container .container-inner .lists .p_p p {
+  margin-left: 5px;
+}
+.container .container-inner .lists .lis {
+  width: 255px;
+  height: 100%;
+  margin: auto;
+}
+.container .container-inner .lists .lis ul {
+  width: 100%;
+  height: 100%;
+}
+.container .container-inner .lists .lis ul li {
+  height: 130px;
+  margin-top: 10px;
+}
+.container .container-inner .lists .lis ul li div {
+  width: 120px;
+  height: 130px;
+  float: left;
+}
+.container .container-inner .lists .lis ul li div a {
+  display: block;
+  width: 120px;
+  height: 130px;
+}
+.container .container-inner .lists .lis ul li div a img {
+  display: block;
+  width: 120px;
+  height: 130px;
+}
+.container .container-inner .lists .lis ul li .di1 {
+  width: 120px;
+  height: 130px;
+  background: pink;
+  float: right;
+}
+.container .diameter {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.container .diameter .tri {
+  height: 54px;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+.container .diameter .tri li {
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.container .diameter .tri li a {
+  display: block;
+  width: 90px;
+}
+.container .diameter .tri li a i {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+}
+.container .diameter .tri .aic {
+  color: #ff3738;
+}

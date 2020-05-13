@@ -1,0 +1,171 @@
+.box {
+  width: 100%;
+  height: 100%;
+}
+.box .coin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #f8f8f8;
+}
+.box .coin .coin-tribute .coin-tab {
+  height: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.box .coin .coin-tribute .coin-tab li {
+  width: 100%;
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+.box .coin .coin-tribute .coin-tab li:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.box .coin .coin-tribute .coin-tab .active {
+  background: skyblue;
+  border: none;
+}
+.box .coin .coin-tribute .coin-box {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 10px;
+  position: absolute;
+}
+.box .coin .coin-tribute .coin-box li > ul {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+.box .coin .coin-tribute .coin-box li > ul > li {
+  height: 240px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-top span:nth-of-type(1) {
+  color: #000;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-top span:nth-of-type(2) {
+  color: #ccc;
+  float: right;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .sol {
+  border-bottom: 1px double #eeeeee;
+  margin-top: 8px;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-l {
+  width: 100px;
+  height: 100px;
+  margin-top: 18px;
+  float: left;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-l a {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-l a img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r {
+  width: 180px;
+  position: absolute;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_one {
+  display: block;
+  color: #000000;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_one {
+  width: 128px;
+  color: #cf2126;
+  top: 0px;
+  left: 124px;
+  position: absolute;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_two {
+  color: #cf2126;
+  top: 34px;
+  left: 124px;
+  position: absolute;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_three {
+  width: 100px;
+  top: 34px;
+  left: 181px;
+  position: absolute;
+  display: block;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_four {
+  width: 100px;
+  top: 65px;
+  left: 124px;
+  position: absolute;
+  display: block;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_five {
+  width: 100px;
+  top: 66px;
+  left: 188px;
+  position: absolute;
+  display: block;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_six {
+  width: 100px;
+  top: 86px;
+  left: 124px;
+  position: absolute;
+  display: block;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r .spn_seven {
+  width: 134px;
+  top: 88px;
+  left: 190px;
+  position: absolute;
+  display: block;
+}
+.box .coin .coin-tribute .coin-box li > ul > li .box-btm .btm-r button {
+  top: 149px;
+  left: 270px;
+  position: absolute;
+}
+.diameter {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.diameter .tri {
+  height: 54px;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+.diameter .tri li {
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.diameter .tri li a {
+  display: block;
+  width: 90px;
+}
+.diameter .tri li a i {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+}
+.diameter .tri .aic {
+  color: #ff3738;
+}

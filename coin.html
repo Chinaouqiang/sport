@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/coin.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <div class="box">
+         <!-- 个人资料 -->
+
+         <div class="coin">
+             <a id="coins"></a>
+            <div class="coin-tribute">
+                <ul class="coin-tab">
+                    <li class="active">兑换记录</li>
+                </ul>
+                <ul class="coin-box">
+                    <li>
+                        <ul>
+                            <li class="listsss">
+                                <div class="box-top">
+                                    <span>这是一个兑换的一个记录</span><span>已完成</span>
+                                </div>
+                                <div class="sol"></div>
+                                <div  class="box-btm">
+                                    <div class="btm-l">
+                                        <a href="javascript:"><img src="img/ig.jpg"></a>
+                                    </div>
+                                    
+                                    <div class="btm-r">
+                                        <span class="spn_one">这是这个系列的名字</span>
+                                        <span class="spn_two">200积分</span>
+                                    
+                                        <span class="spn_four">编号</span><span class="spn_five">2020050100022</span>
+                                        <span class="spn_six">创建时间</span><span class="spn_seven">2019-05-01 &nbsp;20:20:20</span>
+                                        
+                                     
+                                        <button type="button" class="layui-btn layui-btn-warm layui-btn-radius">再次兑换</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-top">
+                                    <span>这是一个兑换的一个记录</span><span>已完成</span>
+                                </div>
+                                <div class="sol"></div>
+                                <div  class="box-btm">
+                                    <div class="btm-l">
+                                        <a href="javascript:"><img src="img/ig.jpg"></a>
+                                    </div>
+                                    
+                                    <div class="btm-r">
+                                        <span class="spn_one">这是这个系列的名字</span>
+                                        <span class="spn_two">200积分</span><span class="spn_three">|市场价￥20</span>
+                                    
+                                        <span class="spn_four">编号</span><span class="spn_five">2020050100022</span>
+                                        <span class="spn_six">创建时间</span><span class="spn_seven">2019-05-01 &nbsp;20:20:20</span>
+                                        
+                                     
+                                        <button type="button" class="layui-btn layui-btn-warm layui-btn-radius">再次兑换</button>
+                                    </div>
+                                </div>
+                            </li>
+                          
+                        </ul>
+                      
+                    </li>
+                   <li class="dn">
+                      2
+                    </li>
+                    <li class="dn">
+                        3
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="diameter">
+        <ul class="tri">
+            <li><a href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+            <li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+            <li><a id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+            <li class="aic"><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+        </ul>
+    </div>
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/coin.js"></script>
+<!-- <script src="js/personage.js"></script> -->
+<script>
+       $('.coin-tab li').click(function () {
+        var index = $(this).index();
+            $('.coin-box>li').eq(index).fadeIn(200).siblings().fadeOut(200);
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+</script>
+</body>
+</html>

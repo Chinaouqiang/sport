@@ -1,0 +1,88 @@
+.box {
+  width: 100%;
+  height: 100%;
+}
+.box .material {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #f5f6fa;
+}
+.box .material .me {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+.box .material .me ul {
+  width: 340px;
+  height: 54%;
+  margin: 0px auto;
+  background: #fff;
+  border-radius: 5px;
+}
+.box .material .me ul li {
+  margin: 18px 18px;
+  height: 30px;
+  border-bottom: 1px solid #eff0f7;
+}
+.box .material .me ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+.box .material .me ul li a img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.box .material .me ul li span {
+  margin-right: 20px;
+}
+.box .material .me ul li input {
+  margin-top: 4px;
+  background-color: transparent;
+}
+.box .material .me ul li .it {
+  margin: 0px;
+}
+.box .material .me ul li:nth-of-type(1) {
+  height: 60px;
+}
+.box .material .me ul li:nth-of-type(7) {
+  border-bottom: none;
+}
+.diameter {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.diameter .tri {
+  height: 54px;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+.diameter .tri li {
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.diameter .tri li a {
+  display: block;
+  width: 90px;
+}
+.diameter .tri li a i {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+}
+.diameter .tri .aic {
+  color: #ff3738;
+}

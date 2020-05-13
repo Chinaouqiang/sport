@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/commodity.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <div class="box">
+         <!-- 店铺 -->
+        <div class="commodity">
+            <ul class="shopulis">
+                <!-- <li>
+                    <div class="shop-l">
+                        <a href="javascript:">
+                            <img src="img/lb.jpg" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="shop-r">
+                        <span>店铺名</span>
+                        <span>图片地址</span>
+                    
+                    </div>
+                
+                </li> -->
+                
+            </ul>
+        </div>
+    </div>
+    <div class="diameter">
+        <ul class="tri">
+            <li><a href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+            <li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+            <li><a id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+            <li class="aic"><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+        </ul>
+    </div>
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<!-- <script src="js/zepto.min.js"></script> -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/commodity.js"></script>
+<script>
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //常规用法
+  laydate.render({
+    elem: '#fives'
+  });
+});
+</script>
+</body>
+</html>

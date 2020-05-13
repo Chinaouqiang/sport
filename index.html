@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="container-inner">
+      <div class="comment-arousel" style="margin-bottom:15px;">
+        <div class="layui-carousel" id="test1">
+            <div carousel-item>
+              <div><a href="javascript:" class="u4"><img src="img/lb.jpg" alt=""></a></div>
+              <div><a href="javascript:" class="u4"><img src="img/lb_l.jpg" alt=""></a></div>
+              <div><a href="javascript:" class="u4"><img src="img/lb.jpg" alt=""></a></div>
+              <div><a href="javascript:" class="u4"><img src="img/lb_l.jpg" alt=""></a></div>
+              <div><a href="javascript:" class="u4"><img src="img/lb.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row l-w" style="margin-bottom: 18px; width: 100%;height: 50px;background: pink;">
+      <div class="layui-col-xs3" style="height: 50px;text-align: center;">
+        <div class="grid-demo grid-demo-bg1 g-d-a" style="height: 50px;">
+          <a href="javascript:"  style="display: block;width: 30px;height: 30px; margin: auto;"><img src="img/lb.jpg" alt="" style="display: block;width: 30px;height: 30px;"></a>
+          <span>中心</span>
+        </div>
+      </div>
+      <div class="layui-col-xs3" style="height: 50px;text-align: center;">
+        <div class="grid-demo grid-demo-bg1 g-d-a" style="height: 50px;">
+          <a href="javascript:"  style="display: block;width: 30px;height: 30px;margin: auto;"><img src="img/lb.jpg" alt="" style="display: block;width: 30px;height: 30px;"></a>
+          <span>中心</span>
+        </div>
+      </div>
+      <div class="layui-col-xs3" style="height: 50px;text-align: center;">
+        <div class="grid-demo grid-demo-bg1 g-d-a" style="height: 50px;">
+          <a href="javascript:" style="display: block;width: 30px;height: 30px;margin: auto;"><img src="img/lb.jpg" alt="" style="display: block;width: 30px;height: 30px;"></a>
+          <span>中心</span>
+        </div>
+      </div>
+      <div class="layui-col-xs3" style="height: 50px;text-align: center;">
+        <div class="grid-demo grid-demo-bg1 g-d-a" style="height: 50px;">
+          <a href="javascript:"  style="display: block;width: 30px;height: 30px;margin: auto;"><img src="img/lb.jpg" alt="" style="display: block;width: 30px;height: 30px;"></a>
+          <span>中心</span>
+        </div>
+      </div>
+    </div>
+    <div class=" advert" style="margin-bottom: 18px;">
+      <div class="layui-row" style="width: 100%; height: 100px;">
+        <div class="layui-col-xs6 layui-col-md12" style="width: 100%; height: 100px;">
+          <div class="grid-demo grid-demo-bg2" style="width: 100%; height: 100px;">
+            <a href="javascript:"  style="display: block;width: 100%;height: 100px; margin: auto;"><img src="img/lb.jpg" alt="" style="display: block;width: 100%; height: 100px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lists">
+      <div class="p_p"><p>商品列表</p></div>
+      <div class="lis">
+        <ul>
+          <li>
+            <div>
+              <a href="javascript:"><img src="img/ig.jpg" alt=""></a>
+            </div>
+            <div class="di1">
+
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="javascript:"><img src="img/ig.jpg" alt=""></a>
+            </div>
+            <div class="di1">
+
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="javascript:"><img src="img/ig.jpg" alt=""></a>
+            </div>
+            <div class="di1">
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  
+    
+
+    
+        <div class="diameter">
+          <ul class="tri">
+            <li ><a  class="aic" href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+            <li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+            <li><a id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+            <li><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+        </ul>
+        </div>
+        
+    </div>
+    
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/tir.js"></script>
+<script src="js/phone.js"></script>
+
+<script>
+   layui.carousel.render({
+
+       elem: '#test1'
+       ,width: '100%'
+       ,height: '150px'
+       ,interval: 3000
+     });
+  
+   
+    //渲染
+    layui.rate.render({
+      elem: '#test3'  //绑定元素
+      ,theme: '#FFB800;'
+    });
+
+layui.use('upload', function(){
+  var upload = layui.upload;
+   
+  var urls = 'http://q8rwxwn4o.bkt.clouddn.com/'
+upload.render({
+  
+    elem: '#test2'
+
+     ,method: 'post'
+
+     ,number:9
+
+     ,accept: 'images'   //指定允许上传的文件类型 
+
+     ,url: 'http://116.62.56.216:18888/img/upload' //改成您自己的上传接口 
+
+     ,multiple: true //是否允许多文件上传 
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+      });
+    }
+    ,done: function(res){
+      //上传完毕
+      $('#demo2').append('<img src="'+ urls + res.data+'" class="layui-upload-img">') 
+    }
+  });
+});
+   </script>
+
+</body>
+
+</html>

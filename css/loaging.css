@@ -1,0 +1,80 @@
+.box {
+  width: 100%;
+  height: 100%;
+}
+.box .loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.box .loading .loading-iphone {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: pink;
+}
+.box .loading .loading-iphone .iphone {
+  width: 187.5px;
+  height: 35px;
+  line-height: 35px;
+  margin: 20px auto;
+}
+.box .loading .loading-iphone .iphone input {
+  border-radius: none;
+  height: 100%;
+  border: 1px solid #e3e3e3;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 187.5px;
+  padding: 0 5px;
+  font-size: 13px;
+  font-family: sn;
+  color: #666;
+}
+.box .loading .loading-iphone .identifying {
+  width: 220px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0px auto;
+}
+.box .loading .loading-iphone .identifying input {
+  border-radius: none;
+  height: 100%;
+  border: 1px solid #e3e3e3;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 90px;
+  padding: 0 5px;
+  font-size: 13px;
+  font-family: sn;
+  color: #666;
+  margin-left: 10px;
+}
+.box .loading .loading-iphone .identifying #ipt {
+  border-radius: 5px;
+  margin-left: 15px;
+  height: 30px;
+}
+.box .loading .loading-iphone .figure {
+  width: 100px;
+  height: 60px;
+  background: skyblue;
+  margin: 10px auto;
+}
+.box .loading .loading-iphone .press {
+  width: 140px;
+  height: 38px;
+  line-height: 26px;
+  margin: 20px auto;
+}
+.box .loading .loading-iphone .press .layui-btn {
+  width: 140px;
+}

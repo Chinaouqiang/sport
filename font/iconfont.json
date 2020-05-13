@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "398170",
+      "name": "记录",
+      "font_class": "jilu",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "692439",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "765334",
+      "name": "商城",
+      "font_class": "shouye1",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1301370",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "4631515",
+      "name": "个人资料",
+      "font_class": "gerenziliao",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "7216349",
+      "name": "工单",
+      "font_class": "gongdan",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "8159850",
+      "name": "投诉",
+      "font_class": "tousu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "8328299",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8575345",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    }
+  ]
+}

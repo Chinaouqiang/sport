@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), url('iconfont.woff2') format('woff2'), url('iconfont.woff') format('woff'), url('iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+.contain {
+  width: 100%;
+  height: 100%;
+}
+.contain .personage {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+}
+.contain .personage .meyou {
+  width: 375px;
+  height: 15px;
+  margin: 10px auto;
+  line-height: 15px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.contain .personage .meyou span:nth-of-type(1) {
+  display: block;
+  float: left;
+}
+.contain .personage .meyou span:nth-of-type(2) {
+  display: block;
+  float: right;
+}
+.contain .personage .layui-container {
+  width: 100%;
+  height: 100px;
+  background: #fdcc78;
+}
+.contain .personage .layui-container .layui-row .an2 {
+  width: 100px;
+  height: 100px;
+}
+.contain .personage .layui-container .layui-row .an2 div a {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.contain .personage .layui-container .layui-row .an2 div a img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50px;
+}
+.contain .personage .tribute {
+  width: 350px;
+  height: 73px;
+  margin: 20px auto;
+}
+.contain .personage .tribute .tribute-tab {
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  box-shadow: -2px 0 5px #ccc, 0 -2px 5px #ccc, 0 2px 5px #ccc, 2px 0 5px #ccc;
+}
+.contain .personage .tribute .tribute-tab li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+.contain .personage .fw {
+  width: 350px;
+  height: 10px;
+  margin: 20px auto;
+}
+.contain .personage .fw p {
+  font-weight: 18px;
+}
+.contain .personage .material {
+  width: 350px;
+  height: 210px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: -2px 0 5px #ccc, 0 -2px 5px #ccc, 0 2px 5px #ccc, 2px 0 5px #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.contain .personage .material div {
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f4f4f4;
+}
+.contain .personage .material div i {
+  width: 14px;
+  height: 16px;
+  margin-right: 10px;
+}
+.contain .personage .material div span {
+  float: right;
+}
+.contain .personage .material .first {
+  border: none;
+}
+.contain .diameter {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.contain .diameter .tri {
+  height: 54px;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+.contain .diameter .tri li {
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.contain .diameter .tri li a {
+  display: block;
+  width: 90px;
+}
+.contain .diameter .tri li a i {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+}
+.contain .diameter .tri .aic {
+  color: #ff3738;
+}

@@ -1,0 +1,101 @@
+.box {
+  width: 100%;
+  height: 100%;
+}
+.box .record {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #f7f7f7;
+}
+.box .record .recode-drop {
+  width: 375px;
+  height: 450px;
+  margin: 0px auto;
+}
+.box .record .recode-drop .drop {
+  width: 350px;
+  height: 342px;
+  margin: 10px auto;
+  background: #fff;
+}
+.box .record .recode-drop .drop li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+.box .record .recode-drop .drop li input {
+  float: right;
+  margin-top: 4px;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  background-color: transparent;
+}
+.box .record .recode-drop .drop li a {
+  margin-left: 187px;
+}
+.box .record .recode-drop .drop li #inp {
+  margin-top: 4px;
+}
+.box .record .recode-drop .drop li span {
+  float: right;
+}
+.box .record .recode-drop .drop li:nth-of-type(6) {
+  height: 100px;
+}
+.box .record .recode-drop .drop li:nth-of-type(7) {
+  border-bottom: none;
+}
+.box .record .recode-drop .drop .sel #fours {
+  width: 100px;
+  height: 100%;
+  float: right;
+}
+.box .record .recode-drop .drop .listhree .press {
+  width: 133px;
+  height: 100%;
+}
+.box .record .recode-drop .drop .listhree .press .aniu1 {
+  height: 36px;
+  margin-left: 2px;
+}
+.box .record #box {
+  width: 300px;
+  height: 40px;
+  margin: 5px auto;
+}
+.diameter {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.diameter .tri {
+  height: 54px;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+.diameter .tri li {
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.diameter .tri li a {
+  display: block;
+  width: 90px;
+}
+.diameter .tri li a i {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+}
+.diameter .tri .aic {
+  color: #ff3738;
+}

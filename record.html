@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/record.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <div class="box">
+         <!-- 记录 -->
+         <div class="record">
+            <div class="recode-drop">
+                <!-- <input type="text"  id="userid" style="display: none;"> -->
+                <!-- <button type="button" class="layui-btn layui-btn-sm layui-btn-primary" id="bt1" >
+                    <i class="layui-icon">&#xe603;</i>
+                  </button> -->
+
+                  <a href="personage.html" class="layui-btn" target="_blank" style="border: none; background: rgba(0, 0, 0, 0);"><i class="layui-icon" style="color: #000;">&#xe603;</i><span style="color:#000">我的记录</span></a>
+               <ul class="drop">
+                <li class="listwo">销售店铺 
+                    <!-- <input type="text" placeholder="店铺" id="six"> -->
+                       <a href="commodity.html" id="a1">请选择</a>  
+                    </li>
+                   <li>姓名
+                       <input type="text"  placeholder="请输入姓名" id="one">
+                   </li>
+                   <li>手机号<input type="text" placeholder="请输入号码" id="two"></li>
+                   <li>性别<input type="text" placeholder="请输入性别" id="three"></li>
+                   <li class="sel">行驶里程   
+
+                    <select name=""  id="fours">请选择
+                        <option value="500KM">500KM</option>
+                        <option value="600KM">600KM</option>
+                        <option value="700KM">700KM</option>
+                        <option value="800KM">800KM</option>
+                        <option value="900KM">900KM</option>
+                        <option value="1000KM">1000KM</option>
+
+                    </select>
+                
+                </li>
+                   <li  class="listhree">
+                       服务项目 
+                       <div class="press" style="float: right;">
+                        <!-- <button type="button"  class="layui-btn layui-btn-xs aniu1" id='id'>小型按钮</button> -->
+                       </div>
+                    </li>
+                   <li>预约时间
+                        <input type="text" class="layui-input"  id="fives" placeholder="请预约时间"  pattern='yyyy-mm-dd'>
+                    </li>
+               </ul>
+            </div>
+            <div id="box">
+                <button type="button" class="layui-btn layui-btn-fluid">提交</button>
+              </div>
+        </div>
+    </div>
+    <div class="diameter">
+        <ul class="tri">
+            <li><a href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+            <li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+            <li><a id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+            <li ><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+        </ul>
+    </div>
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/record.js"></script>
+
+<script>
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //常规用法
+  laydate.render({
+    elem: '#fives'
+  });
+
+
+//   $('.press').click(function(){
+           
+           
+        // })
+});
+</script>
+</body>
+</html>

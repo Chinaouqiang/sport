@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375,target-densitydpi=device-dpi,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wares.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <div class="box">
+      <a href="Integral.html" class="layui-btn" target="_blank" style="border: none; background: rgba(0, 0, 0, 0);"><i class="layui-icon" style="color: #FFB800;">&#xe603;</i></a>
+      
+         
+         <div class="wares">
+           <!-- <a id="warse"></a> -->
+           
+                <div class="arousel">
+                    <div class="layui-carousel" id="test1">
+                        <!-- <div carousel-item>
+                          <div><a href="javascript:" class="u4"><img src="img/lb.jpg" alt=""></a></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="exchange">
+                    <ul>
+                         <!-- <li>
+                            <p><span>玩偶对对碰</span><span>剩余:333</span></p>
+                            <p> <span>需要积分</span><span>5000</span></p>
+                            <p>兑换详情</p>
+                        </li> -->
+                    </ul>
+                </div>
+                 <div class="convert">
+                   <a id="coin">兑换</a>
+                  
+                </div>
+            </div>
+    </div>
+    <div class="diameter">
+        <ul class="tri">
+          <li><a href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+          <li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+          <li><a id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+          <li class="aic"><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+      </ul>
+    </div>
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/wares.js"></script>
+<!-- <script src="js/coin.js"></script> -->
+<script>
+    layui.carousel.render({
+ 
+        elem: '#test1'
+        ,width: '420px'
+        ,height: '220px'
+        ,interval: 3000
+      });
+   
+    
+     //渲染
+     layui.rate.render({
+       elem: '#test3'  //绑定元素
+       ,theme: '#FFB800;'
+     });
+ 
+ layui.use('upload', function(){
+   var upload = layui.upload;
+    
+   var urls = 'http://q8rwxwn4o.bkt.clouddn.com/'
+ upload.render({
+   
+     elem: '#test2'
+ 
+      ,method: 'post'
+ 
+      ,number:3
+ 
+      ,accept: 'images'   //指定允许上传的文件类型 
+ 
+      ,url: 'http://116.62.56.216:18888/img/upload' //改成您自己的上传接口 
+ 
+      ,multiple: true //是否允许多文件上传 
+     ,before: function(obj){
+       //预读本地文件示例，不支持ie8
+       obj.preview(function(index, file, result){
+       });
+     }
+     ,done: function(res){
+       //上传完毕
+       $('#demo2').append('<img src="'+ urls + res.data+'" class="layui-upload-img">') 
+     }
+   });
+ });
+    </script>
+</body>
+</html>

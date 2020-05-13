@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
+<meta content="telephone=yes" name="format-detection" /> 
+<meta content="email=no" name="format-detection" /> 
+<title>jQuery手机移动端下拉列表选择代码</title>  
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/drop.css">
+<link rel="stylesheet" href="font/iconfont.css">
+</head> 
+<body> 
+<div class="div1" style="width: 100%; height: 100%;">
+	<section class="job-module"> 
+		<dl class="retrie"> 
+			<dt>
+				<a id="area" href="javascript:;">分类 </a>
+			</dt> 
+			<dd class="area"> 
+				<ul class="slide downlist" id="sil"> 
+					
+				</ul> 
+			</dd>  
+		</dl> 
+	</section> 
+	<div class="show">
+		<div class="sw" id="datamessage">
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="diameter">
+	<ul class="tri">
+		<li><a href="index.html"><i class="iconfont">&#xe650;</i>首页</a> </li>
+		<li><a href="Integral.html"><i class="iconfont">&#xe618;</i>商城</a></li>
+		<li ><a  class="aic" id="drop"><i class="iconfont">&#xe60e;</i>工单</a></li>
+		<li><a href="personage.html"><i class="iconfont">&#xe62f;</i>我的</a></li>
+	</ul>
+</div>
+<script src="layui-v2.5.6/layui/layui.all.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/tir.js"></script>
+<script src="js/drop.js"></script>
+
+<script>
+        $('.retrie dt a').click(function(){
+            var $t=$(this);
+            if($t.hasClass('up')){
+                $(".retrie dt a").removeClass('up');
+                $('.downlist').hide();
+                $('.mask').hide();
+            }else{
+                $(".retrie dt a").removeClass('up');
+                $('.downlist').hide();
+                $t.addClass('up');
+                $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
+                $('.mask').show();
+            }
+        });
+        $(".area ul li a:contains('"+$('#area').text()+"')").addClass('selected');
+        $(".wage ul li a:contains('"+$('#wage').text()+"')").addClass('selected');
+</script>
+
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
